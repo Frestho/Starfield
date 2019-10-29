@@ -26,6 +26,7 @@ class Particle
         x = y = 250;
         angle = Math.random() * TAU;
         speed = Math.random() * 6.9;
+		color = color(Math.random()*255, Math.random()*255, Math.random()*255);
     }
     void move() {
         x += Math.cos(angle)*speed;
@@ -39,8 +40,22 @@ class Particle
 
 class OddballParticle extends Particle//inherits from Particle
 {
+	OddballParticle() {
+		x = y = 250;
+		angle = Math.random() * TAU;
+        speed = Math.random() * 6.9;
+	}
 	//your code here
-
+	void move() {
+		angle += Math.random();
+		speed += Math.random() * 4 - 2;
+    	x += Math.cos(angle)*speed;
+    	y += Math.sin(angle)*speed;
+    }
+	void show() {
+        fill(color);
+        ellipse(x, y, 5, 5);
+    }
 }
 
 
