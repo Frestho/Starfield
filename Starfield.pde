@@ -63,6 +63,6 @@ class OddballParticle extends Particle//inherits from Particle
   }
   void show() {
         fill(myColor);
-        ellipse((float)x, (float)y, 10, 10);
+        ellipse((float)x, (float)y, 11, 11);
     }
 }
