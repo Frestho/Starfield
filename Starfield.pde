@@ -5,15 +5,15 @@ void setup()
   //your code here
     size(500, 500);
     particles = new Particle[1000];
-    particles[0] = new OddballParticle();
-    for(int i = 1; i < particles.length; i++)
+    particles[999] = new OddballParticle();
+    for(int i = 0; i < particles.length-1; i++)
         particles[i] = new Particle();
 }
 void draw()
 {
   background(200);
   //your code here
-    for(int i = 0; i < particles.length; i++) {
+    for(int i =0; i < particles.length; i++) {
         particles[i].move();
         particles[i].show();
     }
