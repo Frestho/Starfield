@@ -24,7 +24,7 @@ class Particle
     color myColor;
     Particle() {
         x = y = 250;
-        angle = Math.random() * TAU;
+        angle = Math.random() * 6.283;
         speed = Math.random() * 6.9;
         myColor = color((int) (Math.random()*255), (int) (Math.random()*255), (int) (Math.random()*255));
     }
@@ -33,7 +33,7 @@ class Particle
         y += Math.sin(angle)*speed;
         if(x > 500 || x < 0 || y > 500 || y < 0) {
           x = y = 250;
-        angle = Math.random() * TAU;
+        angle = Math.random() * 6.283;
         speed = Math.random()*6.9;
         }
     }
@@ -46,7 +46,7 @@ class OddballParticle extends Particle//inherits from Particle
 {
   OddballParticle() {
     x = y = 250;
-    angle = Math.random() * TAU;
+    angle = Math.random() * 6.283;
         speed = Math.random() * 6.9;
   }
   //your code here
