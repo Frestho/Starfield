@@ -5,8 +5,7 @@ void setup()
   //your code here
     size(500, 500);
     particles = new Particle[1000];
-    particles[999] = new OddballParticle();
-    for(int i = 0; i < particles.length-1; i++)
+    for(int i = 0; i < particles.length; i++)
         particles[i] = new Particle();
 }
 void draw()
@@ -42,7 +41,7 @@ class Particle
         fill(myColor);
         ellipse((float)x, (float)y, 10, 10);
     }
-}
+}/*
 class OddballParticle extends Particle//inherits from Particle
 {
   OddballParticle() {
@@ -61,4 +60,4 @@ class OddballParticle extends Particle//inherits from Particle
         fill(myColor);
         ellipse((float)x, (float)y, 11, 11);
     }
-}
+}*/
