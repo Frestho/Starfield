@@ -17,6 +17,9 @@ void draw()
         particles[i].show();
     }
 }
+void mouseClicked() {
+  setup();
+}
 class Particle
 {
   //your code here
@@ -41,7 +44,7 @@ class Particle
         fill(myColor);
         ellipse((float)x, (float)y, (float)10, (float)10);
     }
-}/*
+}
 class OddballParticle extends Particle//inherits from Particle
 {
   OddballParticle() {
@@ -60,4 +63,4 @@ class OddballParticle extends Particle//inherits from Particle
         fill(myColor);
         ellipse((float)x, (float)y, (float)11, (float)11);
     }
-}*/
+}
