@@ -47,22 +47,3 @@ class Particle
     }
 }
 
-class OddballParticle extends Particle//inherits from Particle
-{
-  OddballParticle() {
-    x = y = 250;
-    angle = Math.random() * TAU;
-        speed = Math.random() * 6.9;
-  }
-  //your code here
-  void move() {
-      angle += Math.random();
-      speed += Math.random() * 4 - 2;
-      x += Math.cos(angle)*speed;
-      y += Math.sin(angle)*speed;
-  }
-  void show() {
-        fill(myColor);
-        ellipse((float)x, (float)y, 11, 11);
-    }
-}
