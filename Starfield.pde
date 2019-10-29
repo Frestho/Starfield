@@ -39,7 +39,7 @@ class Particle
     }
     void show() {
         fill(myColor);
-        ellipse((float)x, (float)y, 10, 10);
+        ellipse((float)x, (float)y, (float)10, (float)10);
     }
 }/*
 class OddballParticle extends Particle//inherits from Particle
@@ -58,6 +58,6 @@ class OddballParticle extends Particle//inherits from Particle
   }
   void show() {
         fill(myColor);
-        ellipse((float)x, (float)y, 11, 11);
+        ellipse((float)x, (float)y, (float)11, (float)11);
     }
 }*/
