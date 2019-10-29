@@ -18,9 +18,6 @@ void draw()
         particles[i].show();
     }
 }
-void mouseClicked() {
-   setup(); 
-}
 class Particle
 {
   //your code here
