@@ -4,9 +4,10 @@ void setup()
 {
   //your code here
     size(500, 500);
-    particles = new Particle[600];
-    for(int i = 0; i < particles.length; i++)
+    particles = new Particle[1000];
+    for(int i = 0; i < particles.length - 1; i++)
         particles[i] = new Particle();
+    particles[particles.length - 1] = new OddballParticle();
 }
 void draw()
 {
