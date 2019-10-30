@@ -4,7 +4,7 @@ void setup()
 {
   //your code here
     size(500, 500);
-    particles = new Particle[1000];
+    particles = new Particle[600];
     for(int i = 0; i < particles.length; i++)
         particles[i] = new Particle();
 }
